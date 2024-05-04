@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css">
+    <title>QR Code Generator App</title>
+</head>
+<body class="w-screen h-screen bg-blue-200 flex items-center justify-center">
+    <main class="border w-[400px] rounded-xl h-[450px] p-5 bg-white flex flex-col items-center ">
+        <header class="w-full mb-5">
+            <h1 class="font-bold text-2xl w-full">Testing My Js</h1>
+            <p class="text-gray-400">QR Code Generator App</p>
+        </header>
+        <section class=" w-full">
+            <form action="#" id="submitForm">
+                <div class=" w-full flex justify-between items-end gap-2">
+                    <div class="flex-grow w-full">
+                        <label for="inputURL" class="block outline-none mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Text or URL</label>
+                        <input type="text" name="inputURL" id="inputURL" class="rounded-lg w-full outline-none" placeholder="Text or URL">
+                    </div>
+                    <button type="button" id="btn" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 h-[45px] m-0">Generate</button>
+                </div>
+            </form>
+        </section>
+        <div class="imgBox" class="mt-5">
+            <img src="" alt="" class="w-[200px] mt-10" id="qr-img">
+        </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
